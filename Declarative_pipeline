@@ -1,0 +1,29 @@
+Jenkins->New item->DjangoCICD->pipeline->ok
+Description - This is a CICD for a Django app
+GitHub project - paste github url
+Display name - Django Notes App
+Build Triggers - Github hook trigger for GITScm polling
+Pipeline Script
+
+pipeline {
+    agent{ label "vinod"}
+  Stages{
+     stage("code"){ 
+         steps{}
+   }
+
+     stage("build"){ 
+         steps{}
+   }
+
+     stage("Test"){ 
+         steps{}
+   }
+
+     stage("Deploy"){ 
+            steps{}
+   }
+
+
+ }
+}
